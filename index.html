@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://kit.fontawesome.com/684a35a8bf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="flex justify-center items-center h-24 md:h-16">
+        <ul class="flex flex-row items-center justify-end md:justify-evenly rounded-lg h-16 w-[90%] p-2 bg-orange-300">
+            <li class="hidden md:block"><a href="">Home</a></li>
+            <li class="hidden md:block"><a href="">Kemahasiswaan</a></li>
+            <li class="hidden md:block"><a href="">Jurnal</a></li>
+            <li class="hidden md:block"><a href="">Contact</a></li>
+
+            <li class="md:hidden flex items-center">
+                    <button id="menu-button">
+                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="menu" class="fixed top-0 right-0 w-full bg-orange-300 h-full transform translate-x-full transition-transform duration-300 ease-in-out">
+        <ul class="flex flex-row items-center justify-end md:justify-evenly rounded-lg h-16 w-[90%] p-2 bg-orange-300">
+            <li class="md:hidden flex items-center">
+                    <button id="menu-button">
+                        
+                    </button>
+            </li>
+        </ul>
+        <ul class="flex flex-col justify-center h-[80vh] items-center p-6">
+            <li class="py-3"><a href="" class="text-xl cursor-pointer">Home</a></li>
+            <li class="py-3"><a href="" class="text-xl cursor-pointer">Kemahasiswaan</a></li>
+            <li class="py-3"><a href="" class="text-xl cursor-pointer">Jurnal</a></li>
+            <li class="py-3"><a href="" class="text-xl cursor-pointer">Contact</a></li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
