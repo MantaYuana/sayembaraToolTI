@@ -1,47 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <script src="https://kit.fontawesome.com/684a35a8bf.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <nav class="flex justify-center items-center h-24 md:h-16">
-        <ul class="flex flex-row items-center justify-end md:justify-evenly rounded-lg h-16 w-[90%] p-2 bg-orange-300">
-            <li class="hidden md:block"><a href="">Home</a></li>
-            <li class="hidden md:block"><a href="">Kemahasiswaan</a></li>
-            <li class="hidden md:block"><a href="">Jurnal</a></li>
-            <li class="hidden md:block"><a href="">Contact</a></li>
+    <section
+        style="background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/hmtiudayana_cover.jpg')"
+        class="h-dvh" id="hero">
+        <nav>
+            <div class="h-1/6 max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <div class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="img/logohmti-colored.png" class="h-16" alt="Logo Teknologi Informasi" />
+                    <div class="flex flex-col">
+                        <!-- FIXME: theme color not working, quick fix is to use this [] inject -->
+                        <span class="self-center text-3xl font-semibold whitespace-nowrap text-[#785233]">Teknologi</span>
+                        <span class="self-center text-3xl font-semibold whitespace-nowrap text-[#ECBB4E]">Informasi</span>
+                    </div>
+                </div>
+                <div class="md:block md:w-auto">
+                    <ul class="flex flex-row">
+                        <li class="border-r border-black px-6">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="border-r border-black px-6">
+                            <a href="#">Kemahasiswaan</a>
+                        </li>
+                        <li class="border-r border-black px-6">
+                            <a href="#">Jurnal</a>
+                        </li>
+                        <li class="px-6">
+                            <a href="#">Kontak</a>
+                        </li>
+                    </ul>
+                </div>
 
-            <li class="md:hidden flex items-center">
-                    <button id="menu-button">
-                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-            </li>
-        </ul>
-    </nav>
+                <div class="flex flex-row space-x-6">
+                    <img src="img/logo-fakultasTeknik-yellow.png" class="h-16"
+                        alt="Logo Senat Mahasiswa Fakultas Teknik">
+                    <img src="img/logoUdayana.png" class="h-16" alt="Logo Universitas Udayana">
+                </div>
+            </div>
+        </nav>
 
-    <div id="menu" class="fixed top-0 right-0 w-full bg-orange-300 h-full transform translate-x-full transition-transform duration-300 ease-in-out">
-        <ul class="flex flex-row items-center justify-end md:justify-evenly rounded-lg h-16 w-[90%] p-2 bg-orange-300">
-            <li class="md:hidden flex items-center">
-                    <button id="menu-button">
-                        
-                    </button>
-            </li>
-        </ul>
-        <ul class="flex flex-col justify-center h-[80vh] items-center p-6">
-            <li class="py-3"><a href="" class="text-xl cursor-pointer">Home</a></li>
-            <li class="py-3"><a href="" class="text-xl cursor-pointer">Kemahasiswaan</a></li>
-            <li class="py-3"><a href="" class="text-xl cursor-pointer">Jurnal</a></li>
-            <li class="py-3"><a href="" class="text-xl cursor-pointer">Contact</a></li>
-        </ul>
-    </div>
-
+        <div class="h-5/6 size-full flex justify-center items-center">
+            <div class="flex flex-col text-center space-y-3">
+                <h3 class="text-6xl font-bold text-[#ECBB4E]">SELAMAT DATANG</h3>
+                <h3 class="text-6xl font-bold text-[#ECBB4E]">CIVITAS AKADEMIKA</h3>
+                <span class="font-semibold text-[#ECBB4E]">Teknologi Informasi Fakultas Teknik Universitas
+                    Udayana</span>
+            </div>
+        </div>
+    </section>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 </body>
+
 </html>
