@@ -26,6 +26,15 @@ module.exports = {
         sans: ["Poppins", "sans-serif"],
         // 'work-sans': ['"Work Sans"', 'sans-serif'],
       },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+      },
+      animation: {
+        marqueeGallery: "marquee 50s linear infinite",
+      },
     },
   },
 };
