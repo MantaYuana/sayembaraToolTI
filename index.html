@@ -14,9 +14,11 @@
 </head>
 
 <body>
-    <nav class="fixed top-0 w-screen">
+    <!-- TODO: add box shadow when out of hero section -->
+    <!-- FIXME: dropdown not working -->
+    <nav class="fixed top-0 w-screen z-50">
         <div class="h-1/6 max-w-screen-xl flex flex-wrap items-center justify-end mx-auto p-4">
-            <div class="md:block md:w-auto bg-white rounded-lg py-5">
+            <div class="md:block md:w-auto bg-white shadow-md rounded-lg py-5">
                 <ul class="flex flex-row">
                     <!-- <li class="pl-6 flex items-center">
                         <img src="img/logohmti-colored.png" class="h-6" alt="Logo Teknologi Informasi" />
@@ -67,7 +69,7 @@
     <section
         style="background-image:linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)), url('img/hmtiudayana_cover.jpg')"
         class="h-dvh bg-center bg-cover" id="hero">
-        <nav class="bg-white sticky top-0">
+        <nav class="bg-white sticky top-0 z-50">
             <div class="h-1/6 max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <div class="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src="img/logohmti-colored.png" class="h-12" alt="Logo Teknologi Informasi" />
@@ -91,14 +93,14 @@
                             <a href="#kemahasiswaaan">Kemahasiswaan</a>
                         </li>
                         <li class="border-r border-black px-6">
-                            <button data-dropdown-toggle="jurnal-dropdown"
+                            <button data-dropdown-toggle="jurnalDropdownExpandedNavbar"
                                 class="flex items-center justify-between w-full">Jurnal
                                 <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                     fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                         stroke-width="2" d="m1 1 4 4 4-4" />
                                 </svg></button>
-                            <div id="jurnal-dropdown-ExpandedNavbar"
+                            <div id="jurnalDropdownExpandedNavbar"
                                 class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
                                 <ul class="py-2 text-sm text-gray-900">
                                     <li>
@@ -133,7 +135,7 @@
         </div>
     </section>
 
-    <section class="bg-[#ECEFEC] p-5" id="visi-misi">
+    <section class="bg-[#ECEFEC] p-5 z-50" id="visi-misi">
         <div class="flex flex-row space-x-3">
             <div class="flex flex-col bg-[#FFFFFF] rounded-[10px] py-12 px-10 basis-1/3" id="visi">
                 <div class="relative flex items-center mb-5">
@@ -252,7 +254,7 @@
         </div>
     </section>
 
-    <section class="bg-[#ECEFEC] p-5" id="pejabat">
+    <section class="bg-[#ECEFEC] p-5 z-50" id="pejabat">
         <div class="flex flex-col space-y-3 bg-[#FFFFFF] rounded-[10px] py-12 px-10">
             <div class="flex flex-col justify-center mb-10 px-12">
                 <div class="relative flex items-center mb-5">
@@ -260,14 +262,35 @@
                     <span class="flex-shrink mx-4 text-4xl text-[#785233] font-bold">Pejabat</span>
                     <div class="flex-grow border-t border-4 border-[#785233] rounded-[5px]"></div>
                 </div>
-                <p class="text-center text-xl px-6">Jelajahi momen-momen terbaik kami melalui galeri ini. Kami telah
-                    mengabadikan berbagai pencapaian, karya, dan aktivitas kami dalam setiap gambar untuk memberi Anda
-                    gambaran tentang Program Studi Teknologi Informasi</p>
+                <p class="text-center text-xl px-6">Kenali lebih dekat para pejabat yang memimpin Program Studi
+                    Teknologi Informasi. Dengan kerja keras, dedikasi, dan visi mereka, kami berkomitmen untuk terus
+                    tumbuh dan memberikan yang terbaik.</p>
+            </div>
+
+            <!-- FIXME: gimana caranya anying -->
+            <div class="flex flex-col h-[80vh]" id="pejabat-card-group">
+                <div class="flex flex-row w-full" id="pejabat-card">
+                    <div class="bg-[#785233] p-2 rounded-md">
+                        <div class="w-1/2">
+                            <img src="img/koprodiTI.jpg" alt="Koordinator Program Studi Teknologi Informasi">
+                        </div>
+                    </div>
+                    <div class="flex flex-col">
+                        <h3>Koordinator Program Studi</h3>
+                        <h6>Dr. Eng I Putu Agung Bayupati,ST.,MT</h6>
+                        <h6>197904172008121002</h6>
+                        <div class="flex flex-row justify-end content-center">
+                            <span class="bg-[#785233] rounded-full text-white px-2 py-1"><i
+                                    class="fa-regular fa-envelope"></i></span>
+                            <span>bayupati@unud.ac.id</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="bg-[#ECEFEC] p-5" id="kemahasiswaaan">
+    <section class="bg-[#ECEFEC] p-5 z-50" id="kemahasiswaaan">
         <div class="flex flex-col bg-[#FFFFFF] rounded-[10px] py-12">
             <div class="flex flex-col justify-center mb-10 px-12">
                 <div class="relative flex items-center mb-5">
@@ -366,7 +389,7 @@
         </div>
     </section>
 
-    <section class="bg-[#ECEFEC] p-5" id="berita">
+    <section class="bg-[#ECEFEC] p-5 z-50" id="berita">
         <div class="flex flex-col bg-[#FFFFFF] rounded-[10px] py-12">
             <div class="flex flex-col justify-center mb-10 px-12">
                 <div class="relative flex items-center mb-5">
@@ -381,7 +404,7 @@
             <!-- FIXME: element not the same size -->
             <div class="grid grid-cols-2 gap-x-8 gap-y-8 mx-10 h-[80vh]" id="berita-card-group">
                 <div style="background-image:linear-gradient(rgba(48, 32, 19, 0.79), rgba(48, 32, 19, 0.79)), url('img/berita/berita-1.jpg')"
-                    class="flex flex-col content-between justify-between p-8 rounded-lg bg-cover bg-blend-darken text-[#ECBB4E]">
+                    class="flex flex-col content-between justify-between p-8 rounded-lg bg-cover bg-center bg-blend-darken text-[#ECBB4E]">
                     <span class="text-5xl font-bold">AI INNOVATION AND ADAPTATION IN 2024</span>
                     <div class="flex flex-row justify-between">
                         <span class="text-xl"><i class="fa-regular fa-clock mr-2"></i>Oktober 8, 2024</span>
@@ -389,7 +412,7 @@
                     </div>
                 </div>
                 <div style="background-image:linear-gradient(rgba(48, 32, 19, 0.79), rgba(48, 32, 19, 0.79)), url('img/berita/berita-2.jpg')"
-                    class="flex flex-col content-between justify-between p-8 rounded-lg bg-cover bg-blend-darken text-[#ECBB4E]">
+                    class="flex flex-col content-between justify-between p-8 rounded-lg bg-cover bg-center bg-blend-darken text-[#ECBB4E]">
                     <span class="text-5xl font-bold">ITVersary 16</span>
                     <div class="flex flex-row justify-between">
                         <span class="text-xl"><i class="fa-regular fa-clock mr-2"></i>Juni 7, 2024</span>
@@ -397,7 +420,7 @@
                     </div>
                 </div>
                 <div style="background-image:linear-gradient(rgba(48, 32, 19, 0.79), rgba(48, 32, 19, 0.79)), url('img/berita/berita-3.jpg')"
-                    class="flex flex-col content-between justify-between p-8 rounded-lg bg-cover bg-blend-darken text-[#ECBB4E]">
+                    class="flex flex-col content-between justify-between p-8 rounded-lg bg-cover bg-center bg-blend-darken text-[#ECBB4E]">
                     <span class="text-5xl font-bold">Bakti Sosial TI 2024</span>
                     <div class="flex flex-row justify-between">
                         <span class="text-xl"><i class="fa-regular fa-clock mr-2"></i>Juni 6, 2024</span>
@@ -405,7 +428,7 @@
                     </div>
                 </div>
                 <div style="background-image:linear-gradient(rgba(48, 32, 19, 0.79), rgba(48, 32, 19, 0.79)), url('img/berita/berita-4.jpg')"
-                    class="flex flex-col content-between justify-between p-8 rounded-lg bg-cover bg-blend-darken text-[#ECBB4E]">
+                    class="flex flex-col content-between justify-between p-8 rounded-lg bg-cover bg-center bg-blend-darken text-[#ECBB4E]">
                     <span class="text-5xl font-bold">Penutupan SPORTI 2024</span>
                     <div class="flex flex-row justify-between">
                         <span class="text-xl"><i class="fa-regular fa-clock mr-2"></i>Juni 6, 2024</span>
@@ -413,11 +436,10 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
-    <section class="bg-[#ECEFEC] p-5" id="gallery">
+    <section class="bg-[#ECEFEC] p-5 z-50" id="gallery">
         <div class="flex flex-col bg-[#FFFFFF] rounded-[10px] py-12">
             <div class="flex flex-col justify-center mb-10 px-12">
                 <div class="relative flex items-center mb-5">
@@ -509,11 +531,41 @@
 
             </div>
         </div>
+
     </section>
 
-    <section class="bg-[#ECEFEC] p-5" id="kontak">
-        <div class="flex flex-col bg-[#FFFFFF] rounded-[10px] py-12">
+    <section class="bg-[#ECEFEC] p-5 z-50" id="kontak">
+        <div class="flex flex-row rounded-[10px] px-12 space-x-24">
+            <div class="flex flex-col w-1/2 text-[#785233] space-y-6">
+                <h3 class="text-5xl font-bold">Contact Us</h3>
+                <p class="text-xl">Jangan ragu untuk menghubungi kami, pertanyaan Anda adalah prioritas kami.</p>
+                <div class="flex flex-row justify-between content-center text-xl">
+                    <div class="flex content-center">
+                        <span class="bg-[#785233] rounded-full text-3xl text-white px-3 py-2"><i
+                                class="fa-regular fa-envelope"></i></span>
+                        <span>bayupati@unud.ac.id</span>
+                    </div>
+                    <div>
+                        <span class="bg-[#785233] rounded-full text-3xl text-white px-3 py-2"><i
+                                class="fa-solid fa-phone"></i></span>
+                        <span>bayupati@unud.ac.id</span>
+                    </div>
+                </div>
+                <hr>
+                <p class="text-xl">" Kami ada di sini untuk mendengarkan Anda, karena setiap suara itu berharga. Ketika
+                    Anda membutuhkan
+                    jawaban, kami siap memberikan solusi. "</p>
+                <div class="space-x-3 content-center text-xl">
+                    <span class="bg-[#785233] rounded-full text-white px-2 py-1"></span>
+                    <span>Koordinator Program Studi</span>
+                </div>
+            </div>
 
+            <div class="flex flex-col bg-[#FFFFFF] rounded-[10px] px-6 py-4">
+                <form action="">
+                    <input type="text">
+                </form>
+            </div>
         </div>
     </section>
 
