@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -14,10 +14,59 @@
 </head>
 
 <body>
+    <nav class="fixed top-0 w-screen">
+        <div class="h-1/6 max-w-screen-xl flex flex-wrap items-center justify-end mx-auto p-4">
+            <div class="md:block md:w-auto bg-white rounded-lg py-5">
+                <ul class="flex flex-row">
+                    <!-- <li class="pl-6 flex items-center">
+                        <img src="img/logohmti-colored.png" class="h-6" alt="Logo Teknologi Informasi" />
+                    </li> -->
+                    <li class="border-r border-black px-6">
+                        <a href="#hero">Home</a>
+                    </li>
+                    <li class="border-r border-black px-6">
+                        <a href="#visi-misi">Profil</a>
+                    </li>
+                    <li class="border-r border-black px-6">
+                        <a href="#kemahasiswaaan">Kemahasiswaan</a>
+                    </li>
+                    <li class="border-r border-black px-6">
+                        <button data-dropdown-toggle="jurnal-dropdown"
+                            class="flex items-center justify-between w-full">Jurnal
+                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></button>
+                        <div id="jurnal-dropdown-minimizedNavbar"
+                            class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                            <ul class="py-2 text-sm text-gray-900">
+                                <li>
+                                    <a target="_blank" href="https://ojs.unud.ac.id/index.php/lontar"
+                                        class="block px-4 py-2 hover:bg-gray-100 hover:text-gray-500">Lontar</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://ojs.unud.ac.id/index.php/merpati/"
+                                        class="block px-4 py-2 hover:bg-gray-100 hover:text-gray-500">Merpati</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://ojs.unud.ac.id/index.php/jitter/index"
+                                        class="block px-4 py-2 hover:bg-gray-100 hover:text-gray-500">JITTER</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="px-6">
+                        <a href="#kontak">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <section
         style="background-image:linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)), url('img/hmtiudayana_cover.jpg')"
         class="h-dvh bg-center bg-cover" id="hero">
-        <!-- TODO: navbar transparent when out of hero section -->
         <nav class="bg-white sticky top-0">
             <div class="h-1/6 max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <div class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -33,7 +82,7 @@
                 <div class="md:block md:w-auto">
                     <ul class="flex flex-row">
                         <li class="border-r border-black px-6">
-                            <a href="#">Home</a>
+                            <a href="#hero">Home</a>
                         </li>
                         <li class="border-r border-black px-6">
                             <a href="#visi-misi">Profil</a>
@@ -42,7 +91,30 @@
                             <a href="#kemahasiswaaan">Kemahasiswaan</a>
                         </li>
                         <li class="border-r border-black px-6">
-                            <a href="#">Jurnal</a>
+                            <button data-dropdown-toggle="jurnal-dropdown"
+                                class="flex items-center justify-between w-full">Jurnal
+                                <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg></button>
+                            <div id="jurnal-dropdown-ExpandedNavbar"
+                                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                                <ul class="py-2 text-sm text-gray-900">
+                                    <li>
+                                        <a target="_blank" href="https://ojs.unud.ac.id/index.php/lontar"
+                                            class="block px-4 py-2 hover:bg-gray-100 hover:text-gray-500">Lontar</a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://ojs.unud.ac.id/index.php/merpati/"
+                                            class="block px-4 py-2 hover:bg-gray-100 hover:text-gray-500">Merpati</a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="https://ojs.unud.ac.id/index.php/jitter/index"
+                                            class="block px-4 py-2 hover:bg-gray-100 hover:text-gray-500">JITTER</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="px-6">
                             <a href="#">Kontak</a>
@@ -51,7 +123,6 @@
                 </div>
             </div>
         </nav>
-
         <div class="h-5/6 size-full flex justify-center items-center">
             <div class="flex flex-col text-center space-y-3">
                 <h3 class="text-6xl font-bold text-[#ECBB4E]">SELAMAT DATANG</h3>
@@ -183,7 +254,16 @@
 
     <section class="bg-[#ECEFEC] p-5" id="pejabat">
         <div class="flex flex-col space-y-3 bg-[#FFFFFF] rounded-[10px] py-12 px-10">
-
+            <div class="flex flex-col justify-center mb-10 px-12">
+                <div class="relative flex items-center mb-5">
+                    <div class="flex-grow border-t border-4 border-[#785233] rounded-[5px]"></div>
+                    <span class="flex-shrink mx-4 text-4xl text-[#785233] font-bold">Pejabat</span>
+                    <div class="flex-grow border-t border-4 border-[#785233] rounded-[5px]"></div>
+                </div>
+                <p class="text-center text-xl px-6">Jelajahi momen-momen terbaik kami melalui galeri ini. Kami telah
+                    mengabadikan berbagai pencapaian, karya, dan aktivitas kami dalam setiap gambar untuk memberi Anda
+                    gambaran tentang Program Studi Teknologi Informasi</p>
+            </div>
         </div>
     </section>
 
@@ -298,6 +378,7 @@
                     Kemahasiswaan untuk menunjang <br> pengembangan potensi diri bagi para Mahasiswa </p>
             </div>
 
+            <!-- FIXME: element not the same size -->
             <div class="grid grid-cols-2 gap-x-8 gap-y-8 mx-10 h-[80vh]" id="berita-card-group">
                 <div style="background-image:linear-gradient(rgba(48, 32, 19, 0.79), rgba(48, 32, 19, 0.79)), url('img/berita/berita-1.jpg')"
                     class="flex flex-col content-between justify-between p-8 rounded-lg bg-cover bg-blend-darken text-[#ECBB4E]">
@@ -430,6 +511,11 @@
         </div>
     </section>
 
+    <section class="bg-[#ECEFEC] p-5" id="kontak">
+        <div class="flex flex-col bg-[#FFFFFF] rounded-[10px] py-12">
+
+        </div>
+    </section>
 
     <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/ripple.js"></script>
     <script>
