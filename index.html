@@ -31,6 +31,9 @@
                         <a href="#kemahasiswaaan">Kemahasiswaan</a>
                     </li>
                     <li class="border-r border-black px-6">
+                        <a href="blog.html">Berita</a>
+                    </li>
+                    <li class="border-r border-black px-6">
                         <button data-dropdown-toggle="jurnal-dropdown-minimizedNavbar"
                             class="flex items-center justify-between w-full">Jurnal
                             <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -91,6 +94,9 @@
                             <a href="#kemahasiswaaan">Kemahasiswaan</a>
                         </li>
                         <li class="border-r border-black px-6">
+                            <a href="blog.html">Berita</a>
+                        </li>
+                        <li class="border-r border-black px-6">
                             <button data-dropdown-toggle="jurnalDropdownExpandedNavbar"
                                 class="flex items-center justify-between w-full">Jurnal
                                 <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -117,7 +123,7 @@
                             </div>
                         </li>
                         <li class="px-6">
-                            <a href="#">Kontak</a>
+                            <a href="#kontak">Kontak</a>
                         </li>
                     </ul>
                 </div>
@@ -415,7 +421,7 @@
                     </div>
                     <div class="min-w-min px-4">
                         <p>Lowongan pekerjaan yang dapat ditawarkan setelah menyelesaikan perkuliahan di program studi
-                            Teknologi Informasi. <br> <br> Salah satunya melalui program Career Expo Universitas Udayana 
+                            Teknologi Informasi. <br> <br> Salah satunya melalui program Career Expo Universitas Udayana
                         </p>
                     </div>
                     <div class="flex justify-end mb-8">
@@ -441,17 +447,17 @@
             </div>
 
             <!-- FIXME: element not the same size -->
-            <div class="grid grid-cols-2 gap-x-8 gap-y-8 mx-10 h-[80vh]" id="berita-card-group">
+            <div class="grid grid-cols-2 gap-x-8 gap-y-8 mx-10" id="berita-card-group">
                 <div style="background-image:linear-gradient(rgba(48, 32, 19, 0.79), rgba(48, 32, 19, 0.79)), url('img/berita/berita-1.jpg')"
-                    class="flex flex-col content-between justify-between p-8 rounded-lg bg-cover bg-center bg-blend-darken text-[#ECBB4E]">
+                    class="flex flex-col content-between justify-between p-8 rounded-lg bg-cover bg-center bg-blend-darken text-[#ECBB4E] h-[45vh]">
                     <span class="text-5xl font-bold">AI INNOVATION AND ADAPTATION IN 2024</span>
                     <div class="flex flex-row justify-between">
                         <span class="text-xl"><i class="fa-regular fa-clock mr-2"></i>Oktober 8, 2024</span>
-                        <a class="text-xl underline" href="#">Selengkapnya</a>
+                        <a class="text-xl underline" href="blog/artikel-1.html">Selengkapnya</a>
                     </div>
                 </div>
                 <div style="background-image:linear-gradient(rgba(48, 32, 19, 0.79), rgba(48, 32, 19, 0.79)), url('img/berita/berita-2.jpg')"
-                    class="flex flex-col content-between justify-between p-8 rounded-lg bg-cover bg-center bg-blend-darken text-[#ECBB4E]">
+                    class="flex flex-col content-between justify-between p-8 rounded-lg bg-cover bg-center bg-blend-darken text-[#ECBB4E] h-[45vh]">
                     <span class="text-5xl font-bold">ITVersary 16</span>
                     <div class="flex flex-row justify-between">
                         <span class="text-xl"><i class="fa-regular fa-clock mr-2"></i>Juni 7, 2024</span>
@@ -459,7 +465,7 @@
                     </div>
                 </div>
                 <div style="background-image:linear-gradient(rgba(48, 32, 19, 0.79), rgba(48, 32, 19, 0.79)), url('img/berita/berita-3.jpg')"
-                    class="flex flex-col content-between justify-between p-8 rounded-lg bg-cover bg-center bg-blend-darken text-[#ECBB4E]">
+                    class="flex flex-col content-between justify-between p-8 rounded-lg bg-cover bg-center bg-blend-darken text-[#ECBB4E] h-[45vh]">
                     <span class="text-5xl font-bold">Bakti Sosial TI 2024</span>
                     <div class="flex flex-row justify-between">
                         <span class="text-xl"><i class="fa-regular fa-clock mr-2"></i>Juni 6, 2024</span>
@@ -467,13 +473,21 @@
                     </div>
                 </div>
                 <div style="background-image:linear-gradient(rgba(48, 32, 19, 0.79), rgba(48, 32, 19, 0.79)), url('img/berita/berita-4.jpg')"
-                    class="flex flex-col content-between justify-between p-8 rounded-lg bg-cover bg-center bg-blend-darken text-[#ECBB4E]">
+                    class="flex flex-col content-between justify-between p-8 rounded-lg bg-cover bg-center bg-blend-darken text-[#ECBB4E] h-[45vh]">
                     <span class="text-5xl font-bold">Penutupan SPORTI 2024</span>
                     <div class="flex flex-row justify-between">
                         <span class="text-xl"><i class="fa-regular fa-clock mr-2"></i>Juni 6, 2024</span>
                         <a class="text-xl underline" href="#">Selengkapnya</a>
                     </div>
                 </div>
+            </div>
+
+            <div class="mt-5 flex flex-row justify-center mx-10">
+                <a href="blog.html" class="">
+                    <button
+                        class="px-12 py-4 bg-[#785233] text-white rounded-md text-xl duration-300 transition-all ease-in-out hover:bg-[#945a2a]"
+                        type="button">Lihat Semua Berita &gt;&gt;&gt;</button>
+                </a>
             </div>
         </div>
     </section>
@@ -491,6 +505,7 @@
                     gambaran tentang Program Studi Teknologi Informasi</p>
             </div>
 
+            <!-- TODO: make carousel color match with design -->
             <div class="mx-10" id="gallery-carousel">
                 <div id="default-carousel" class="relative w-full" data-carousel="slide">
                     <!-- Carousel wrapper -->
