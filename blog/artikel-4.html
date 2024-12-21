@@ -7,38 +7,34 @@
     <title>Home</title>
     <script src="https://kit.fontawesome.com/684a35a8bf.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <link type="style" rel="stylesheet"
-        href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css" /> -->
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
-    <!-- TODO: how to import tailwind.config.js -->
 </head>
 
 <body>
-    <nav class="bg-white sticky top-0 z-50">
-        <div class="h-1/6 max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <nav class="sticky top-0 z-50 bg-white">
+        <div class="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto h-1/6">
             <div class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="../img/logohmti-colored.png" class="h-12" alt="Logo Teknologi Informasi" />
                 <div class="flex flex-col">
-                    <!-- FIXME: theme color not working, quick fix is to use this [] inject -->
                     <span class="self-center text-xl font-semibold whitespace-nowrap text-[#785233]">Teknologi</span>
                     <span class="self-center text-xl font-semibold whitespace-nowrap text-[#ECBB4E]">Informasi</span>
                 </div>
             </div>
             <div class="md:block md:w-auto">
                 <ul class="flex flex-row">
-                    <li class="border-r border-black px-6">
+                    <li class="px-6 border-r border-black">
                         <a href="../index.html#hero">Home</a>
                     </li>
-                    <li class="border-r border-black px-6">
+                    <li class="px-6 border-r border-black">
                         <a href="../index.html#visi-misi">Profil</a>
                     </li>
-                    <li class="border-r border-black px-6">
+                    <li class="px-6 border-r border-black">
                         <a href="../index.html#kemahasiswaaan">Kemahasiswaan</a>
                     </li>
-                    <li class="border-r border-black px-6">
+                    <li class="px-6 border-r border-black">
                         <a href="../blog.html">Berita</a>
                     </li>
-                    <li class="border-r border-black px-6">
+                    <li class="px-6 border-r border-black">
                         <button data-dropdown-toggle="jurnalDropdownExpandedNavbar"
                             class="flex items-center justify-between w-full">Jurnal
                             <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -76,13 +72,13 @@
         <div class="flex flex-row bg-[#FFFFFF] rounded-[10px] py-12 px-10 text-[#785233] space-x-9">
             <div class="flex flex-col w-2/3 space-y-5 text-xl">
                 <nav class="w-full" id="breadcrumb">
-                    <ol class="flex w-full flex-wrap items-center rounded-md">
+                    <ol class="flex flex-wrap items-center w-full rounded-md">
                         <li
                             class="flex cursor-pointer items-center transition-colors duration-300 hover:text-[#7852338c]">
                             <a href="../blog.html">Blog</a>
                         </li>
                         <li>
-                            <span class="pointer-events-none mx-2">
+                            <span class="mx-2 pointer-events-none">
                                 /
                             </span>
                         </li>
@@ -95,59 +91,57 @@
 
                 <!-- TODO: try and match with design style -->
                 <!-- FIXME: add more margin top -->
-                <div class="w-full overflow-hidden rounded-md justify-center flex items-center">
+                <div class="flex items-center justify-center w-full overflow-hidden rounded-md">
                     <img src="../img/berita/berita-4.jpg" class="rounded-md" alt="Penutupan SPORTI 2024">
                 </div>
 
-                <!-- FIXME: what to color this? -->
-                <div class="rounded-full bg-[#48B0CD] px-8 py-3 max-w-min text-xl font-bold text-white">
-                    Webinar
+                <div class="rounded-full bg-[#CD6548] px-8 py-3 max-w-max text-xl font-bold text-white">
+                    Program Kerja
                 </div>
-
-                <span class="font-bold text-5xl leading-normal">Penutupan SPORTI 2024</span>
+                
+                <span class="text-5xl font-bold leading-normal">Penutupan SPORTI 2024</span>
 
                 <div class="flex flex-row space-x-8">
                     <span>By I Made Sunia Raharja, S.Kom., M.Cs</span>
-                    <span><i class="fa-regular fa-calendar mr-1"></i> October 8, 2024</span>
-                    <span><i class="fa-regular fa-eye mr-1"></i>185 Views</span>
+                    <span><i class="mr-1 fa-regular fa-calendar"></i> Juni 6, 2024</span>
+                    <span><i class="mr-1 fa-regular fa-eye"></i>150 Views</span>
                 </div>
 
-                <p class="text-justify">We are pleased to invite you to join our upcoming webinar titled AI Innovation
-                    and Adaptation in
-                    2024: Strategic Trends and Real-World Applications. This insightful event will explore the latest
-                    advancements and practical applications of AI in various sectors.
+                <p class="text-justify">
+                    Penutupan SPORTI 2024 adalah acara terakhir dari rangkaian acara SPORTI 2024. Pada penutupan ini
+                    ketua panitia SPORTI 2024 mengucapkan terimakasih kepada seluruh panitia yang sudah bekerja keras
+                    melaksanakan kegiatan SPORTI 2024 sehingga sudah berlangsung dengan baik, dan mengucapkan selamat
+                    kepada para pemenang disetiap cabor yang diselenggarakan di kegiatan SPORTI 2024. Kepada para
+                    peserta yang tidak meraih kemenangan beliau juga berterimakasih atas partisipasi dan antusiasme
+                    selama mengikuti cabor dan tetap bersemangat. Beliau berharap SPORTI 2024 dapat memajukan nama
+                    Program Studi Teknologi Informasi di jenjang atau tingkatan yang lebih tinggi nantinya.
                     <br><br>
-                    🗓 Date: Wednesday, 9th October 2024
-                    <br>
-                    🕒 Time: 14:30 - 17:00 (UTC+7)
-                    <br>
-                    📌 Topics to be discussed:
-                    <br> <br>
-                    Advances in Domain Generalization and Adaptation: Applications in Agriculture and Medical Imaging by
-                    Dewa Made Sri Arsa (PhD Candidate, Jeonbuk National University)
-                    <br>
-                    The Role of IoT and Data Analytics in Through Life Engineering Services by Agusmian Partogi
-                    Ompusunggu, PhD (Senior Lecturer, Cranfield University)
-                    <br>
-                    We will also be honored by a welcoming remark from Prof. Ir. Teddy Mantoro, M.Sc., PhD, SMIEEE,
-                    Chairman of IEEE Computational Intelligence Society Indonesia Chapter.
+                    Ketua HMTI Program Studi Teknologi Informasi dalam sambutannya juga mengucapkan terima kasih atas
+                    kerja keras panitia SPORTI 2024 selama satu bulan. Beliau mengucapkan selamat kepada para pemenang
+                    dan mengucapkan terimakasih kepada para atlit sport maupun e-sport karena sudah berpartisipasi dalam
+                    kegiatan SPORTI 2024, dan berharap agar para pemenang nantinya dapat mewakili Program Studi
+                    Teknologi Informasi ke jenjang yang lebih tinggi lagi daripada jenjang Program Studi.
                     <br><br>
-                    🔗 Zoom Link: https://s.pnj.ac.id/ZoomIEEECISWebinar2024
-                    <br>
-                    📋 Registration: https://s.pnj.ac.id/RegistrasiIEEEWebinarCIS2024
-                    <br>
-                    Thank you!
-                    <br><br>
-                    Video Promosi
-
-                    <video class="w-full h-auto" controls>
-                        <source src="../assets/videos/berita-1.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                    Koordinator Program Studi(Koprodi) Teknologi Informasi Dr. Eng. I Putu Agung Bayupati, S.T.,M.T.
+                    menyampaikan bahwa kegiatan SPORTI 2024 bukan berhenti di kompetisi ini saja, namun dapat menjadi
+                    kebiasaan mahasiswa di jaman modern seperti saat ini yang di dipenuhi dengan distraksi dari kultur
+                    teknologi maju dan canggih yang dapat menjauhkan mahasiswa dari kebiasaan hidup sehat yang aktif
+                    berolahraga. Di jaman moderen ini kebiasaan berolahraga dikalangan generasi muda sudah mulai
+                    berkurang, padahal kebiasaan berolahraga sangat penting untuk menjaga kesehatan dan kebugaran.
+                    Selain untuk bertanding kegiatan SPORTI juga dapat digunakan untuk bersanding saling mengenal antar
+                    angkatan mahasiswa Program Studi Teknologi Informasi. Kegiatan kemahasiswaan seperti ini selain
+                    memberikan manfaat kepada mahasiswa, juga sangat penting bagi pihak Program Studi Teknologi
+                    Informasi maupun Fakultas Teknik dalam hal memenuhi IKU (Indikator kinerja Utama), sehingga memang
+                    sangat diharapkan sekali. Kegiatan seperti ini dapat memberikan manfaat administratif bagi mahasiswa
+                    sebagai pelengkap kelulusan mahasiswa dalam bentuk SKP atau pendamping ijasah, dan Koprodi berharap
+                    agar output dari kegiatan SPORTI ini ada yang mengikuti kompetisi di tingkat yang lebih tinggi untuk
+                    mendapatkan poin SKP yang tinggi, dan apabila mahasiswa mendapatkan prestasi di kompetisi tingkat
+                    nasional maupun internasional akan sangat penting untuk meningkatkan IKU dan akreditasi Program
+                    Studi, Fakultas Teknik dan Universitas Udayana.
                 </p>
             </div>
 
-            <div class="flex flex-col space-y-7 text-xl">
+            <div class="flex flex-col text-xl space-y-7">
                 <span class="font-bold">Share this blog</span>
                 <div class="flex flex-row space-x-2 text-white">
                     <div class="w-10 h-10 flex justify-center content-center rounded bg-[#1877F2]">
@@ -176,7 +170,7 @@
                                 </div>
 
                                 <div class="flex flex-col space-y-1">
-                                    <span class="font-bold text-xl">ITVersary 16</span>
+                                    <span class="text-xl font-bold">ITVersary 16</span>
                                     <span class="text-sm"><i class="fa-regular fa-calendar"></i> Juni 7, 2024</span>
                                 </div>
                             </div>
@@ -191,7 +185,7 @@
                                 </div>
 
                                 <div class="flex flex-col space-y-1">
-                                    <span class="font-bold text-xl">Bakti Sosial TI 24</span>
+                                    <span class="text-xl font-bold">Bakti Sosial TI 24</span>
                                     <span class="text-sm"><i class="fa-regular fa-calendar"></i> Juni 6, 2024</span>
                                 </div>
                             </div>
@@ -207,8 +201,8 @@
                                 </div>
 
                                 <div class="flex flex-col space-y-1">
-                                    <span class="font-bold text-xl">AI INNOVATION 2024</span>
-                                    <span class="text-sm"><i class="fa-regular fa-calendar"></i> Juni 6, 2024</span>
+                                    <span class="text-xl font-bold">AI INNOVATION 2024</span>
+                                    <span class="text-sm"><i class="fa-regular fa-calendar"></i> Oktober 8, 2024</span>
                                 </div>
                             </div>
                         </div>
@@ -243,8 +237,8 @@
             </div>
         </div>
         <div class="flex flex-row justify-end bg-[#785233] text-white p-5">
-            <span class="border-r border-white pr-2">Terms &amp; Condition</span>
-            <span class="border-r border-white px-2">Privacy Policy</span>
+            <span class="pr-2 border-r border-white">Terms &amp; Condition</span>
+            <span class="px-2 border-r border-white">Privacy Policy</span>
             <span class="px-2">Cookies</span>
         </div>
     </footer>

@@ -7,33 +7,30 @@
     <title>Home</title>
     <script src="https://kit.fontawesome.com/684a35a8bf.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <link type="style" rel="stylesheet"
-        href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css" /> -->
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
-    <!-- TODO: how to import tailwind.config.js -->
 </head>
 
 <body>
-    <nav class="fixed top-0 w-screen z-50">
-        <div class="h-1/6 max-w-screen-xl flex flex-wrap items-center justify-end mx-auto p-4">
-            <div class="md:block md:w-auto bg-white shadow-md rounded-lg py-5">
+    <nav class="fixed top-0 z-50 w-screen">
+        <div class="flex flex-wrap items-center justify-end max-w-screen-xl p-4 mx-auto h-1/6">
+            <div class="py-5 bg-white rounded-lg shadow-md md:block md:w-auto">
                 <ul class="flex flex-row">
-                    <!-- <li class="pl-6 flex items-center">
+                    <!-- <li class="flex items-center pl-6">
                         <img src="img/logohmti-colored.png" class="h-6" alt="Logo Teknologi Informasi" />
                     </li> -->
-                    <li class="border-r border-black px-6">
+                    <li class="px-6 border-r border-black">
                         <a href="#hero">Home</a>
                     </li>
-                    <li class="border-r border-black px-6">
+                    <li class="px-6 border-r border-black">
                         <a href="#visi-misi">Profil</a>
                     </li>
-                    <li class="border-r border-black px-6">
+                    <li class="px-6 border-r border-black">
                         <a href="#kemahasiswaaan">Kemahasiswaan</a>
                     </li>
-                    <li class="border-r border-black px-6">
+                    <li class="px-6 border-r border-black">
                         <a href="blog.html">Berita</a>
                     </li>
-                    <li class="border-r border-black px-6">
+                    <li class="px-6 border-r border-black">
                         <button data-dropdown-toggle="jurnal-dropdown-minimizedNavbar"
                             class="flex items-center justify-between w-full">Jurnal
                             <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -69,13 +66,12 @@
 
     <section
         style="background-image:linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)), url('img/hmtiudayana_cover.jpg')"
-        class="h-dvh bg-center bg-cover" id="hero">
-        <nav class="bg-white sticky top-0 z-50">
-            <div class="h-1/6 max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        class="bg-center bg-cover h-dvh" id="hero">
+        <nav class="sticky top-0 z-50 bg-white">
+            <div class="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto h-1/6">
                 <div class="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src="img/logohmti-colored.png" class="h-12" alt="Logo Teknologi Informasi" />
                     <div class="flex flex-col">
-                        <!-- FIXME: theme color not working, quick fix is to use this [] inject -->
                         <span
                             class="self-center text-xl font-semibold whitespace-nowrap text-[#785233]">Teknologi</span>
                         <span
@@ -84,19 +80,19 @@
                 </div>
                 <div class="md:block md:w-auto">
                     <ul class="flex flex-row">
-                        <li class="border-r border-black px-6">
+                        <li class="px-6 border-r border-black">
                             <a href="#hero">Home</a>
                         </li>
-                        <li class="border-r border-black px-6">
+                        <li class="px-6 border-r border-black">
                             <a href="#visi-misi">Profil</a>
                         </li>
-                        <li class="border-r border-black px-6">
+                        <li class="px-6 border-r border-black">
                             <a href="#kemahasiswaaan">Kemahasiswaan</a>
                         </li>
-                        <li class="border-r border-black px-6">
+                        <li class="px-6 border-r border-black">
                             <a href="blog.html">Berita</a>
                         </li>
-                        <li class="border-r border-black px-6">
+                        <li class="px-6 border-r border-black">
                             <button data-dropdown-toggle="jurnalDropdownExpandedNavbar"
                                 class="flex items-center justify-between w-full">Jurnal
                                 <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -129,8 +125,8 @@
                 </div>
             </div>
         </nav>
-        <div class="h-5/6 size-full flex justify-center items-center">
-            <div class="flex flex-col text-center space-y-3">
+        <div class="flex items-center justify-center h-5/6 size-full">
+            <div class="flex flex-col space-y-3 text-center">
                 <h3 class="text-6xl font-bold text-[#ECBB4E]">SELAMAT DATANG</h3>
                 <h3 class="text-6xl font-bold text-[#ECBB4E]">CIVITAS AKADEMIKA</h3>
                 <span class="font-semibold text-[#ECBB4E]">Teknologi Informasi Fakultas Teknik Universitas
@@ -163,10 +159,9 @@
                                 </svg>
                             </span>
                         </button>
-                        <div id="content-1" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div id="content-1" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0">
                             <div class="pb-5 text-xl text-[#785233]">
-                                <!-- FIXME: list-decimal not working -->
-                                <ol class="list-decimal">
+                                <ol>
                                     <li>1. Menghasilkan sumber daya manusia dengan kompetensi tinggi, daya saing, dan
                                         kebijaksanaan.</li>
                                     <li>2. Fokus pada pengembangan ilmu dan teknologi informasi, khususnya dalam
@@ -193,7 +188,7 @@
                                 </svg>
                             </span>
                         </button>
-                        <div id="content-2" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div id="content-2" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0">
                             <div class="pb-5 text-xl text-[#785233]">
                                 <ol class="list-decimal">
                                     <li>1. Diakui di masyarakat lokal, nasional, dan internasional.</li>
@@ -218,7 +213,7 @@
                                 </svg>
                             </span>
                         </button>
-                        <div id="content-3" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div id="content-3" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0">
                             <div class="pb-5 text-xl text-[#785233]">
                                 <ol class="list-decimal">
                                     <li>1. Menghasilkan sumber daya manusia dengan kepekaan dan ketajaman nurani. </li>
@@ -238,9 +233,8 @@
                     <div class="flex-grow border-t border-4 border-[#785233] rounded-[5px]"></div>
                 </div>
 
-                <!-- FIXME: try to implement list decimal here so it will have indentation -->
                 <span class="text-xl text-[#785233]">
-                    <ol class="">
+                    <ol>
                         <li>1. Menyelenggarakan pendidikan tinggi berkualitas untuk menciptakan lulusan yang unggul dan
                             berkarakter luhur</li>
                         <br>
@@ -259,13 +253,13 @@
 
     <section class="bg-[#ECEFEC] p-5 z-50" id="pejabat">
         <div class="flex flex-col space-y-3 bg-[#FFFFFF] rounded-[10px] py-12 px-10 text-[#785233]">
-            <div class="flex flex-col justify-center mb-10 px-12">
+            <div class="flex flex-col justify-center px-12 mb-10">
                 <div class="relative flex items-center mb-5">
                     <div class="flex-grow border-t border-4 border-[#785233] rounded-[5px]"></div>
                     <span class="flex-shrink mx-4 text-4xl text-[#785233] font-bold">Pejabat</span>
                     <div class="flex-grow border-t border-4 border-[#785233] rounded-[5px]"></div>
                 </div>
-                <p class="text-center text-xl px-6">Kenali lebih dekat para pejabat yang memimpin Program Studi
+                <p class="px-6 text-xl text-center">Kenali lebih dekat para pejabat yang memimpin Program Studi
                     Teknologi Informasi. Dengan kerja keras, dedikasi, dan visi mereka, kami berkomitmen untuk terus
                     tumbuh dan memberikan yang terbaik.</p>
             </div>
@@ -280,27 +274,20 @@
                     </div>
                     <div class="flex flex-col w-[75%] p-8 justify-between h-full">
                         <div>
-                            <h3 class="text-4xl mb-6 font-bold">Koordinator Program Studi</h3>
-                            <h6 class="text-xl mb-6">Dr. Eng I Putu Agung Bayupati,ST.,MT</h6>
-                            <h6 class="text-xl mb-6">197504232003121002</h6>
+                            <h3 class="mb-6 text-4xl font-bold">Koordinator Program Studi</h3>
+                            <h6 class="mb-6 text-xl">Dr. Eng I Putu Agung Bayupati,ST.,MT</h6>
+                            <h6 class="mb-6 text-xl">197504232003121002</h6>
                         </div>
 
-                        <!-- FIXME: itu aku jadiin href biar bisa langsung kirim email gitu man, apakah aman? (tp belum di buat linknya)-->
-                        <a href="#"
-                            class="flex flex-row justify-end content-center hover:opacity-80 transition-all duration-200 cursor-pointer hover:underline">
+                        <a target="_blank" href="mailto:bayupati@unud.ac.id"
+                            class="flex flex-row content-center justify-end transition-all duration-200 cursor-pointer hover:opacity-80 hover:underline">
                             <span class="bg-[#785233] relative mr-3 rounded-full text-white px-2 py-1">
                                 <i class="fa-regular fa-envelope"></i>
                             </span>
                             <span class="text-xl">bayupati@unud.ac.id</span>
-                            <!-- <span class="bg-[#785233] relative mr-3 rounded-full text-white px-2 py-1">
-                                <i class="fa-regular fa-envelope"></i>
-                            </span>
-                            <span class="text-xl ">bayupati@unud.ac.id</span> -->
                         </a>
                     </div>
                 </div>
-
-                <!-- FIXME: tinggal ganti isi datanya man ke yg sekretaris-->
 
                 <div class="flex border-4 rounded-md border-[#785233] flex-row h-[50vh] w-[100%]">
                     <div class="bg-[#785233] w-[25%] flex justify-center items-center] h-full px-2 py-6 ">
@@ -311,22 +298,17 @@
                     </div>
                     <div class="flex flex-col w-[75%] p-8 justify-between h-full">
                         <div>
-                            <h3 class="text-4xl mb-6 font-bold">Sekretaris Program Studi</h3>
-                            <h6 class="text-xl mb-6">Putu Wira Buana,S.Kom.,MT</h6>
-                            <h6 class="text-xl mb-6">197904172008121002</h6>
+                            <h3 class="mb-6 text-4xl font-bold">Sekretaris Program Studi</h3>
+                            <h6 class="mb-6 text-xl">Putu Wira Buana,S.Kom.,MT</h6>
+                            <h6 class="mb-6 text-xl">197904172008121002</h6>
                         </div>
 
-                        <!-- FIXME: itu aku jadiin href biar bisa langsung kirim email gitu man, apakah aman? (tp belum di buat linknya)-->
-                        <a href="#"
-                            class="flex flex-row justify-end content-center hover:opacity-80 transition-all duration-200 cursor-pointer hover:underline">
+                        <a target="_blank" href="mailto:wb@unud.ac.id"
+                            class="flex flex-row content-center justify-end transition-all duration-200 cursor-pointer hover:opacity-80 hover:underline">
                             <span class="bg-[#785233] relative mr-3 rounded-full text-white px-2 py-1">
                                 <i class="fa-regular fa-envelope"></i>
                             </span>
                             <span class="text-xl">wb@unud.ac.id</span>
-                            <!-- <span class="bg-[#785233] relative mr-3 rounded-full text-white px-2 py-1">
-                                <i class="fa-regular fa-envelope"></i>
-                            </span>
-                            <span class="text-xl text-[#785233] ">bayupati@unud.ac.id</span> -->
                         </a>
                     </div>
                 </div>
@@ -336,7 +318,7 @@
 
     <section class="bg-[#ECEFEC] p-5 z-50" id="kemahasiswaaan">
         <div class="flex flex-col bg-[#FFFFFF] rounded-[10px] py-12">
-            <div class="flex flex-col justify-center mb-10 px-12">
+            <div class="flex flex-col justify-center px-12 mb-10">
                 <div class="relative flex items-center mb-5">
                     <div class="flex-grow border-t border-4 border-[#785233] rounded-[5px]"></div>
                     <span class="flex-shrink mx-4 text-4xl text-[#785233] font-bold">Bidang Kemahasiswaan</span>
@@ -348,15 +330,13 @@
             </div>
 
             <div class="flex flex-row justify-around mx-10 h-min">
-                <!-- TODO: try to implement bg inline style into tailwind -->
-
                 <div style="background-color: rgba(255,255,255,0.65); background-image:linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('img/hmti_bg.jpg')"
                     class="transition-all bg-blend-lighten bg-cover bg-center shrink flex flex-col justify-between w-1/4 hover:w-1/3 py-3 px-12 h-[65vh]">
-                    <div class="flex flex-row justify-between items-center mt-6">
+                    <div class="flex flex-row items-center justify-between mt-6">
                         <span class="text-5xl text-[#785233] font-bold">HMTI</span>
                         <img class="w-[100px]" src="img/logohmti-colored.png" alt="Logo HMTI">
                     </div>
-                    <div class="min-w-min px-4">
+                    <div class="px-4 min-w-min">
                         <p>HMTI adalah singkatan dari Himpunan Mahasiswa Teknologi Informasi <br> <br> HMTI
                             merupakan
                             HMJ termuda yang berdiri di lingkungan Fakultas Teknik
@@ -373,11 +353,11 @@
 
                 <div style="background-image:linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('img/tecart-bg.jpg')"
                     class="transition-all bg-blend-soft-light bg-[#48B0CD]/55 bg-cover bg-center shrink flex flex-col justify-between w-1/4 hover:w-1/3 py-3 px-12 h-[65vh]">
-                    <div class="flex flex-row justify-between items-center mt-6">
+                    <div class="flex flex-row items-center justify-between mt-6">
                         <span class="text-5xl text-[#48B0CD] font-bold">TecArt</span>
                         <img class="w-[59.11px]" src="img/tecart-colored-logo.png" alt="Logo Technology Artisan">
                     </div>
-                    <div class="min-w-min px-4">
+                    <div class="px-4 min-w-min">
                         <p>Technology Artisan adalah Kelompok Studi yang bergerak di bidang
                             Teknologi Informasi. <br> <br>TecArt berfokus pada pengembangan
                             potensi mahasiswa serta sebagai sarana kolaborasi dalam
@@ -393,12 +373,12 @@
 
                 <div style="background-image:linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url('img/beasiswa-bg.jpg')"
                     class="transition-all bg-blend-lighten bg-[#ECBB4E]/25 bg-cover bg-center shrink flex flex-col justify-between w-1/4 hover:w-1/3 py-3 px-12 h-[65vh]">
-                    <div class="flex flex-row justify-between items-center mt-6">
+                    <div class="flex flex-row items-center justify-between mt-6">
                         <span class="text-5xl text-[#ECBB4E] font-bold">Beasiswa</span>
                         <img class="w-[59.11px] invisible" src="img/tecart-colored-logo.png"
                             alt="Logo Technology Artisan">
                     </div>
-                    <div class="min-w-min px-4">
+                    <div class="px-4 min-w-min">
                         <p>Beasiswa merupakan bantuan yang dapat di berikan kepada suatu mahasiswa untuk mendapatkan
                             keringanan dari segi finansial. <br> <br> Biasanya berada di lingkup Fakultas dan
                             Universitas
@@ -414,12 +394,12 @@
 
                 <div style="background-image:linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url('img/lowongan-bg.jpg')"
                     class="transition-all bg-[#785233]/55 bg-cover bg-center shrink flex flex-col justify-between w-1/4 hover:w-1/3 py-3 px-12 h-[65vh]">
-                    <div class="flex flex-row justify-between items-center mt-6">
+                    <div class="flex flex-row items-center justify-between mt-6">
                         <span class="text-5xl text-[#785233] font-bold">Lowongan</span>
                         <img class="w-[59.11px] invisible " src="img/tecart-colored-logo.png"
                             alt="Logo Technology Artisan">
                     </div>
-                    <div class="min-w-min px-4">
+                    <div class="px-4 min-w-min">
                         <p>Lowongan pekerjaan yang dapat ditawarkan setelah menyelesaikan perkuliahan di program studi
                             Teknologi Informasi. <br> <br> Salah satunya melalui program Career Expo Universitas Udayana
                         </p>
@@ -436,23 +416,22 @@
 
     <section class="bg-[#ECEFEC] p-5 z-50" id="berita">
         <div class="flex flex-col bg-[#FFFFFF] rounded-[10px] py-12 text-[#785233]">
-            <div class="flex flex-col justify-center mb-10 px-12">
+            <div class="flex flex-col justify-center px-12 mb-10">
                 <div class="relative flex items-center mb-5">
                     <div class="flex-grow border-t border-4 border-[#785233] rounded-[5px]"></div>
                     <span class="flex-shrink mx-4 text-4xl text-[#785233] font-bold">Seputar Teknologi Informasi</span>
                     <div class="flex-grow border-t border-4 border-[#785233] rounded-[5px]"></div>
                 </div>
-                <p class="text-center text-xl px-6">Berita terbaru mengenai pencapaian, program kerja, dan kegiatan
+                <p class="px-6 text-xl text-center">Berita terbaru mengenai pencapaian, program kerja, dan kegiatan
                     Program Studi Teknologi Informasi lainnya.</p>
             </div>
 
-            <!-- FIXME: element not the same size -->
-            <div class="grid grid-cols-2 gap-x-8 gap-y-8 mx-10" id="berita-card-group">
+            <div class="grid grid-cols-2 mx-10 gap-x-8 gap-y-8" id="berita-card-group">
                 <div style="background-image:linear-gradient(rgba(48, 32, 19, 0.79), rgba(48, 32, 19, 0.79)), url('img/berita/berita-1.jpg')"
                     class="flex flex-col content-between justify-between p-8 rounded-lg bg-cover bg-center bg-blend-darken text-[#ECBB4E] h-[45vh]">
                     <span class="text-5xl font-bold">AI INNOVATION AND ADAPTATION IN 2024</span>
                     <div class="flex flex-row justify-between">
-                        <span class="text-xl"><i class="fa-regular fa-clock mr-2"></i>Oktober 8, 2024</span>
+                        <span class="text-xl"><i class="mr-2 fa-regular fa-clock"></i>Oktober 8, 2024</span>
                         <a class="text-xl underline" href="blog/artikel-1.html">Selengkapnya</a>
                     </div>
                 </div>
@@ -460,29 +439,29 @@
                     class="flex flex-col content-between justify-between p-8 rounded-lg bg-cover bg-center bg-blend-darken text-[#ECBB4E] h-[45vh]">
                     <span class="text-5xl font-bold">ITVersary 16</span>
                     <div class="flex flex-row justify-between">
-                        <span class="text-xl"><i class="fa-regular fa-clock mr-2"></i>Juni 7, 2024</span>
-                        <a class="text-xl underline" href="#">Selengkapnya</a>
+                        <span class="text-xl"><i class="mr-2 fa-regular fa-clock"></i>Juni 7, 2024</span>
+                        <a class="text-xl underline" href="blog/artikel-2.html">Selengkapnya</a>
                     </div>
                 </div>
                 <div style="background-image:linear-gradient(rgba(48, 32, 19, 0.79), rgba(48, 32, 19, 0.79)), url('img/berita/berita-3.jpg')"
                     class="flex flex-col content-between justify-between p-8 rounded-lg bg-cover bg-center bg-blend-darken text-[#ECBB4E] h-[45vh]">
                     <span class="text-5xl font-bold">Bakti Sosial TI 2024</span>
                     <div class="flex flex-row justify-between">
-                        <span class="text-xl"><i class="fa-regular fa-clock mr-2"></i>Juni 6, 2024</span>
-                        <a class="text-xl underline" href="#">Selengkapnya</a>
+                        <span class="text-xl"><i class="mr-2 fa-regular fa-clock"></i>Juni 6, 2024</span>
+                        <a class="text-xl underline" href="blog/artikel-3.html">Selengkapnya</a>
                     </div>
                 </div>
                 <div style="background-image:linear-gradient(rgba(48, 32, 19, 0.79), rgba(48, 32, 19, 0.79)), url('img/berita/berita-4.jpg')"
                     class="flex flex-col content-between justify-between p-8 rounded-lg bg-cover bg-center bg-blend-darken text-[#ECBB4E] h-[45vh]">
                     <span class="text-5xl font-bold">Penutupan SPORTI 2024</span>
                     <div class="flex flex-row justify-between">
-                        <span class="text-xl"><i class="fa-regular fa-clock mr-2"></i>Juni 6, 2024</span>
-                        <a class="text-xl underline" href="#">Selengkapnya</a>
+                        <span class="text-xl"><i class="mr-2 fa-regular fa-clock"></i>Juni 6, 2024</span>
+                        <a class="text-xl underline" href="blog/artikel-4.html">Selengkapnya</a>
                     </div>
                 </div>
             </div>
 
-            <div class="mt-5 flex flex-row justify-center mx-10">
+            <div class="flex flex-row justify-center mx-10 mt-5">
                 <a href="blog.html" class="">
                     <button
                         class="px-12 py-4 bg-[#785233] text-white rounded-md text-xl duration-300 transition-all ease-in-out hover:bg-[#945a2a]"
@@ -494,13 +473,13 @@
 
     <section class="bg-[#ECEFEC] p-5 z-50" id="gallery">
         <div class="flex flex-col bg-[#FFFFFF] rounded-[10px] py-12 text-[#785233]">
-            <div class="flex flex-col justify-center mb-10 px-12">
+            <div class="flex flex-col justify-center px-12 mb-10">
                 <div class="relative flex items-center mb-5">
                     <div class="flex-grow border-t border-4 border-[#785233] rounded-[5px]"></div>
                     <span class="flex-shrink mx-4 text-4xl text-[#785233] font-bold">Gallery</span>
                     <div class="flex-grow border-t border-4 border-[#785233] rounded-[5px]"></div>
                 </div>
-                <p class="text-center text-xl px-6">Jelajahi momen-momen terbaik kami melalui galeri ini. Kami telah
+                <p class="px-6 text-xl text-center">Jelajahi momen-momen terbaik kami melalui galeri ini. Kami telah
                     mengabadikan berbagai pencapaian, karya, dan aktivitas kami dalam setiap gambar untuk memberi Anda
                     gambaran tentang Program Studi Teknologi Informasi</p>
             </div>
@@ -509,7 +488,7 @@
             <div class="mx-10" id="gallery-carousel">
                 <div id="default-carousel" class="relative w-full" data-carousel="slide">
                     <!-- Carousel wrapper -->
-                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96 mx-24">
+                    <div class="relative h-56 mx-24 overflow-hidden rounded-lg md:h-96">
                         <!-- Item 1 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
                             <img src="/img/gallery/marquee-1.jpg"
@@ -542,7 +521,7 @@
                         </div>
                     </div>
                     <!-- Slider indicators -->
-                    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                    <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2 rtl:space-x-reverse">
                         <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
                             data-carousel-slide-to="0"></button>
                         <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
@@ -556,7 +535,7 @@
                     </div>
                     <!-- Slider controls -->
                     <button type="button"
-                        class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                        class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer start-0 group focus:outline-none"
                         data-carousel-prev>
                         <span
                             class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
@@ -569,7 +548,7 @@
                         </span>
                     </button>
                     <button type="button"
-                        class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                        class="absolute top-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer end-0 group focus:outline-none"
                         data-carousel-next>
                         <span
                             class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
@@ -593,7 +572,7 @@
             <div class="flex flex-col w-1/2 text-[#785233] space-y-6">
                 <h3 class="text-5xl font-bold">Contact Us</h3>
                 <p class="text-xl">Jangan ragu untuk menghubungi kami, pertanyaan Anda adalah prioritas kami.</p>
-                <div class="flex flex-row justify-between content-center text-xl">
+                <div class="flex flex-row content-center justify-between text-xl">
                     <div class="flex content-center space-x-4">
                         <span class="bg-[#785233] rounded-full text-3xl text-white px-3 py-2"><i
                                 class="fa-regular fa-envelope"></i></span>
@@ -609,7 +588,7 @@
                 <p class="text-xl">Kami ada di sini untuk mendengarkan Anda, karena setiap suara itu berharga. Ketika
                     Anda membutuhkan
                     jawaban, kami siap memberikan solusi.</p>
-                <div class="space-x-3 flex flex-row content-center text-xl">
+                <div class="flex flex-row content-center space-x-3 text-xl">
                     <img src="img/koprodiTI.jpg" alt="Koordinator Program Studi Teknologi Informasi"
                         class="w-10 h-10 rounded-full">
                     <span class="self-center">Koordinator Program Studi</span>
@@ -671,7 +650,7 @@
     </section>
 
     <footer class="bg-[#FFFFFF] z-50" id="footer">
-        <div class="flex flex-row p-5">
+        <div class="flex flex-row justify-between p-5">
             <div class="flex flex-col text-[#6B6B6B] space-y-5">
                 <h4 class="text-2xl font-bold">Teknologi Informasi Jimbaran</h4>
                 <div class="flex flex-col">
@@ -689,56 +668,17 @@
                                 class="fa-brands fa-facebook"></i></span></a>
                 </div>
             </div>
-
-            <div class="flex flex-col">
-
-            </div>
         </div>
+
         <div class="flex flex-row justify-end bg-[#785233] text-white p-5">
-            <span class="border-r border-white pr-2">Terms &amp; Condition</span>
-            <span class="border-r border-white px-2">Privacy Policy</span>
+            <span class="pr-2 border-r border-white">Terms &amp; Condition</span>
+            <span class="px-2 border-r border-white">Privacy Policy</span>
             <span class="px-2">Cookies</span>
         </div>
     </footer>
 
     <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/ripple.js"></script>
-    <script>
-        function toggleAccordion(index) {
-            const content = document.getElementById(`content-${index}`);
-            const icon = document.getElementById(`icon-${index}`);
-            const contents = [document.getElementById("content-1"), document.getElementById("content-2"), document.getElementById("content-3")];
-            const icons = [document.getElementById("icon-1"), document.getElementById("icon-2"), document.getElementById("icon-3")];
-
-            const downSVG = `
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-8 h-8">
-        <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
-      </svg>
-    `;
-
-            const upSVG = `
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-8 h-8">
-        <path fill-rule="evenodd" d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z" clip-rule="evenodd" />
-      </svg>
-    `;
-
-            if (content.style.maxHeight && content.style.maxHeight !== '0px') {
-                content.style.maxHeight = '0';
-                icon.innerHTML = upSVG;
-            } else {
-                content.style.maxHeight = content.scrollHeight + 'px';
-                icon.innerHTML = downSVG;
-            }
-
-            for (let i = 0; i < contents.length; i++) {
-                if (i == index - 1) {
-                    console.log(i)
-                    continue;
-                }
-                contents[i].style.maxHeight = '0';
-                icons[i].innerHTML = upSVG;
-            }
-        }
-    </script>
+    <script src="script.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 

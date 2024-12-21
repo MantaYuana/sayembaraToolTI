@@ -7,38 +7,34 @@
     <title>Home</title>
     <script src="https://kit.fontawesome.com/684a35a8bf.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <link type="style" rel="stylesheet"
-        href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css" /> -->
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
-    <!-- TODO: how to import tailwind.config.js -->
 </head>
 
 <body>
-    <nav class="bg-white sticky top-0 z-50">
-        <div class="h-1/6 max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <nav class="sticky top-0 z-50 bg-white">
+        <div class="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto h-1/6">
             <div class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="../img/logohmti-colored.png" class="h-12" alt="Logo Teknologi Informasi" />
                 <div class="flex flex-col">
-                    <!-- FIXME: theme color not working, quick fix is to use this [] inject -->
                     <span class="self-center text-xl font-semibold whitespace-nowrap text-[#785233]">Teknologi</span>
                     <span class="self-center text-xl font-semibold whitespace-nowrap text-[#ECBB4E]">Informasi</span>
                 </div>
             </div>
             <div class="md:block md:w-auto">
                 <ul class="flex flex-row">
-                    <li class="border-r border-black px-6">
+                    <li class="px-6 border-r border-black">
                         <a href="../index.html#hero">Home</a>
                     </li>
-                    <li class="border-r border-black px-6">
+                    <li class="px-6 border-r border-black">
                         <a href="../index.html#visi-misi">Profil</a>
                     </li>
-                    <li class="border-r border-black px-6">
+                    <li class="px-6 border-r border-black">
                         <a href="../index.html#kemahasiswaaan">Kemahasiswaan</a>
                     </li>
-                    <li class="border-r border-black px-6">
+                    <li class="px-6 border-r border-black">
                         <a href="../blog.html">Berita</a>
                     </li>
-                    <li class="border-r border-black px-6">
+                    <li class="px-6 border-r border-black">
                         <button data-dropdown-toggle="jurnalDropdownExpandedNavbar"
                             class="flex items-center justify-between w-full">Jurnal
                             <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -76,13 +72,13 @@
         <div class="flex flex-row bg-[#FFFFFF] rounded-[10px] py-12 px-10 text-[#785233] space-x-9">
             <div class="flex flex-col w-2/3 space-y-5 text-xl">
                 <nav class="w-full" id="breadcrumb">
-                    <ol class="flex w-full flex-wrap items-center rounded-md">
+                    <ol class="flex flex-wrap items-center w-full rounded-md">
                         <li
                             class="flex cursor-pointer items-center transition-colors duration-300 hover:text-[#7852338c]">
                             <a href="../blog.html">Blog</a>
                         </li>
                         <li>
-                            <span class="pointer-events-none mx-2">
+                            <span class="mx-2 pointer-events-none">
                                 /
                             </span>
                         </li>
@@ -95,22 +91,22 @@
 
                 <!-- TODO: try and match with design style -->
                 <!-- FIXME: add more margin top -->
-                <div class="w-full overflow-hidden rounded-md justify-center flex items-center">
+                <div class="flex items-center justify-center w-full overflow-hidden rounded-md">
                     <img src="../img/berita/berita-1.jpg" class="rounded-md" alt="AI INNOVATION AND ADAPTATION IN 2024 Strategic Trends
                         and Real World Applications">
                 </div>
 
-                <div class="rounded-full bg-[#48B0CD] px-8 py-3 max-w-min text-xl font-bold text-white">
+                <div class="rounded-full bg-[#48B0CD] px-8 py-3 max-w-max text-xl font-bold text-white">
                     Webinar
                 </div>
 
-                <span class="font-bold text-5xl leading-normal">AI INNOVATION AND ADAPTATION IN 2024 Strategic Trends
+                <span class="text-5xl font-bold leading-normal">AI INNOVATION AND ADAPTATION IN 2024 Strategic Trends
                     and Real World Applications</span>
 
                 <div class="flex flex-row space-x-8">
                     <span>By I Made Sunia Raharja, S.Kom., M.Cs</span>
-                    <span><i class="fa-regular fa-calendar mr-1"></i> October 8, 2024</span>
-                    <span><i class="fa-regular fa-eye mr-1"></i>185 Views</span>
+                    <span><i class="mr-1 fa-regular fa-calendar"></i> Oktober 8, 2024</span>
+                    <span><i class="mr-1 fa-regular fa-eye"></i>185 Views</span>
                 </div>
 
                 <p class="text-justify">We are pleased to invite you to join our upcoming webinar titled AI Innovation
@@ -148,7 +144,7 @@
                 </p>
             </div>
 
-            <div class="flex flex-col space-y-7 text-xl">
+            <div class="flex flex-col text-xl space-y-7">
                 <span class="font-bold">Share this blog</span>
                 <div class="flex flex-row space-x-2 text-white">
                     <div class="w-10 h-10 flex justify-center content-center rounded bg-[#1877F2]">
@@ -176,7 +172,7 @@
                                 </div>
 
                                 <div class="flex flex-col space-y-1">
-                                    <span class="font-bold text-xl">ITVersary 16</span>
+                                    <span class="text-xl font-bold">ITVersary 16</span>
                                     <span class="text-sm"><i class="fa-regular fa-calendar"></i> Juni 7, 2024</span>
                                 </div>
                             </div>
@@ -190,7 +186,7 @@
                                 </div>
 
                                 <div class="flex flex-col space-y-1">
-                                    <span class="font-bold text-xl">Bakti Sosial TI 24</span>
+                                    <span class="text-xl font-bold">Bakti Sosial TI 24</span>
                                     <span class="text-sm"><i class="fa-regular fa-calendar"></i> Juni 6, 2024</span>
                                 </div>
                             </div>
@@ -204,7 +200,7 @@
                                 </div>
 
                                 <div class="flex flex-col space-y-1">
-                                    <span class="font-bold text-xl">Penutupan SPORTI 2024</span>
+                                    <span class="text-xl font-bold">Penutupan SPORTI 2024</span>
                                     <span class="text-sm"><i class="fa-regular fa-calendar"></i> Juni 6, 2024</span>
                                 </div>
                             </div>
@@ -240,8 +236,8 @@
             </div>
         </div>
         <div class="flex flex-row justify-end bg-[#785233] text-white p-5">
-            <span class="border-r border-white pr-2">Terms &amp; Condition</span>
-            <span class="border-r border-white px-2">Privacy Policy</span>
+            <span class="pr-2 border-r border-white">Terms &amp; Condition</span>
+            <span class="px-2 border-r border-white">Privacy Policy</span>
             <span class="px-2">Cookies</span>
         </div>
     </footer>
